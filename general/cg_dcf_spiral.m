@@ -13,7 +13,7 @@
 % Outputs:
 % -------
 % 
-%    dcf: estimated DCF
+%    dcf: estimated DCF [Nk,1]
 %
 % Article: Feizollah and Tardif (2022)
 % -------
