@@ -22,7 +22,7 @@
 % 
 %    header: header information of ISMRMRD format
 % 
-%    nosie: acquired noise data
+%    nosie: acquired noise data [Nnoise,Ncoil]
 % 
 % Article: Feizollah and Tardif (2022)
 % -------
