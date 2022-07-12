@@ -7,7 +7,7 @@ This MATLAB code reconstructs MR images using expanded signal model image recons
 
 
 ## ISMRMRD format
-Using ISMRMRD format that has raw k-space and trajectory data is the most convenient way to use the code. Also, some information in ISMRMRD header files are used during image reconstruction.
+Using ISMRMRD files that have raw k-space and trajectory data is the most convenient way to use the code. Also, some information in ISMRMRD header files are used during image reconstruction.
 
 ## How to use
 Follow steps in ***example_cg_recon.m*** to learn how to use the code.
