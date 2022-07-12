@@ -9,7 +9,7 @@
 % **IMPORTANT: max_numel is selected based on GPU memory to
 %   balance between maximum number of matrix size and the load on GPU. It is
 %   different for every GPU, so please modify to achieve maximum
-%   performance. It is when the maximum power is drawn by the GPU. The value here
+%   performance. It is when the maximum power is drawn by the GPU. The default value is
 %   tested for RTX 3090 and Tesla V100.**
 % 
 %
