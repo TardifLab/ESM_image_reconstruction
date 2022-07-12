@@ -17,6 +17,6 @@ In order to efficiently use GPU, maximum variable size defined in ***cg_encoding
 ## This version
 * is only for single-band excitation sequences;
 * does NOT use gridding for image reconstruction;
-* does NOT use Multifrequency interpolation (MFI) for correction of B<sub>0</sub> nonuniformity;
+* does NOT use Multifrequency interpolation (MFI) for correction of B<sub>0</sub> nonuniformity.
 
 **If you have any question regarding the code, please contact: [sajjad.feizollah@mail.mcgill.ca](mailto:sajjad.feizollah@mail.mcgill.ca)**
