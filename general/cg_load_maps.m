@@ -4,7 +4,7 @@
 % -----------
 % 
 % Loads coil sensitivity maps, B0 nonuniformity, and mask from a .mat file.
-% The mat file should contain: 'sens_map', 'bField', 'mask'
+% The mat file should contain: 'sens_map', 'bField', 'mask'.
 %
 % Inputs:
 % ------
