@@ -8,15 +8,15 @@
 % Inputs:
 % ------
 %
-%    data:    structure with data for image reconstruction:
+%    data:    structure containing data for image reconstruction:
 %
-%       data.kloc:  coefficients for spherical harmonic basis function of trajectory (rad/m) [Nk,Norder,Ncontrast,Nslice]
+%       data.kloc:  trajectory coefficients for spherical harmonic basis function (rad/m) [Nk,Norder,Ncontrast,Nslice]
 % 
-%       data.kdata: measured k-space samples for each coil and each acquisition [Nk,Ncoil,Ncontrast,Nslice]
+%       data.kdata: measured k-space samples [Nk,Ncoil,Ncontrast,Nslice]
 % 
 %       data.header:  header file of measured data in ISMRMRD format that includes:
 %                   
-%                 data.header.position: slice center
+%                 data.header.position: position of slice center
 %                   
 %                 data.header.hdr.encoding.reconSpace.matrixSize.x: matrix size
 % 
@@ -29,18 +29,20 @@
 %       data.b0:    B0 nonuniformity map [Nx,Ny,Nz]
 % 
 %       data.mask:  mask for image reconstruction [Nx,Ny,Nz]
+%
+%   n:  number of slice to be reconstructed
 % 
 % Outputs:
 % -------
 % 
 %    recon_data: structure with parameters for image recon.
 %   
-%       recon_data.h: spherical harmonics basis function [Norder,N]
+%       recon_data.h: spherical harmonics basis function [Norder,N*N]
 %       recon_data.kloc: trajectory data [Nk,Norder,Ncontrast]
 %       recon_data.kdatak-space raw data [Nk,Ncoil,Ncontrast]
 %       recon_data.Np: total number of pixels (N*N)
 %       recon_data.sens: coil sensitivity map [N*N,Ncoils]
-%       recon_data.b0: B0 nonuniformity map [N*N,1]
+%       recon_data.b0: B0 nonuniformity map [1,N*N]
 %       recon_data.t: time vector of samples [Nk,1]
 %       recon_data.Nc: number of coils (Ncoil)
 %       recon_data.Nk: number of k-space samples (Nk)
