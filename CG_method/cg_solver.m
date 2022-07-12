@@ -10,7 +10,7 @@
 % Inputs:
 % ------
 %
-%    recon_data: structure with parameters for image recon.
+%    recon_data: structure with data for image recon.
 %   
 %       recon_data.h: spherical harmonics basis function [Norder,N]
 %       recon_data.kloc: trajectory data [Nk,Norder,Ncontrast]
@@ -26,12 +26,12 @@
 % 
 %    nIter: number of iterations
 % 
-%    vis: show information for every step
+%    vis: turn on/off to show information for every step (true/false)
 % 
 % Outputs:
 % -------
 % 
-%    b: reconstructed image [N*N,Ncontrast,NIter]
+%    b: reconstructed image for every iteration [N*N,Ncontrast,NIter]
 % 
 % Article: Feizollah and Tardif (2022)
 % -------
