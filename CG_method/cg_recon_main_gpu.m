@@ -38,12 +38,12 @@
 % 
 %    nIter: number of itterations for Conjugate Gradient (CG)
 % 
-%    vis:   turn on/off showing information about every iteration in CG
+%    vis:   turn on/off showing information about every iteration in CG (true/false)
 % 
 % Outputs:
 % -------
 % 
-%    im: reconstructed image [Nx,Ny,Nz,Naquisition,Niter]
+%    im: reconstructed image for every iteration [Nx,Ny,Nz,NIter,Naquisition]
 % 
 % Article: Feizollah and Tardif (2022)
 % -------
