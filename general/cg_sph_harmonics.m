@@ -1,3 +1,28 @@
+% -_-_-_-_-_-_-_-_-_-_-_-_-_-_-cg_sph_harmonics-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+%
+% Description: 
+% -----------
+% 
+% Calculates spherical harmonics basis functions up to the 3rd order.
+%
+% Inputs:
+% ------
+%
+%    x: meshgridded values of x- [Nx*Nx,1]
+%    y: meshgridded values of y- [Ny*Ny,1]
+%    z: meshgridded values of z- [Nz*Nz,1]
+%
+% Outputs:
+% -------
+% 
+%    H: spherical harmonics basis functions [16,N*N]
+%
+% Article: Feizollah and Tardif (2022)
+% -------
+%
+% Sajjad Feizollah, July 2022
+% -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
 function H=cg_sph_harmonics(x,y,z)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Generates spherical harmonics basis functions.
