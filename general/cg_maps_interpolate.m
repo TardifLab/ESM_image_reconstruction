@@ -15,7 +15,7 @@
 % 
 %    mask: mask for image recon [Nx,Ny,Nz]
 % 
-%    header: position information of scan and maps
+%    header: ISMRMRD header with position information of the scan and maps
 % 
 % Outputs:
 % -------
@@ -59,7 +59,6 @@ x=linspace(x-fovx/2,x+fovx/2-fovx/Nx,Nx);
 y=linspace(y-fovy/2,y+fovy/2-fovy/Ny,Ny);
 [X,Y,Z]=meshgrid(x,y,z);
 
-% sens_new=single(zeros(size(sens)));
 for k=1:size(sens,4)
     sens_new(:,:,:,k)=interp3(X,Y,Z,sens(:,:,I,k),Xv,Yv,Zv,'makima');
 end
