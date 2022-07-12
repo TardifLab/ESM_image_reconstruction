@@ -4,7 +4,8 @@
 % -----------
 % 
 % Reads raw data of a scan in ISMRMRD format containing k-space data,
-% trajectory, header, and noise, then sorts the data for image recon.
+% trajectory, header, and noise, then sorts the data for image recon 
+% into acquisitions for each slice.
 %
 % Inputs:
 % ------
@@ -22,7 +23,7 @@
 % 
 %    header_new: header information of ISMRMRD format
 % 
-%    nosie: acquired noise data
+%    nosie: acquired noise data [Nnoise,Ncoils]
 % 
 % Article: Feizollah and Tardif (2022)
 % -------
@@ -97,4 +98,3 @@ end
 header_new.position=header_new.position(:,I);
 kdata=kdata(:,:,:,I);
 kloc=kloc(:,:,:,I);
-
