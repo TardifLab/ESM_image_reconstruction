@@ -3,28 +3,15 @@
 % Description:
 % -----------
 % 
-% Gets raw data of a scan in ISMRMRD format, coil sensitivity maps, B0
-% nonuniformity, and mask. Calculates noise covariance matrix and adds
-% noise to the raw k-space data and reconstructs image. Results will be
-% used in SNR calculation for multiple replica method (Robson et al., 2008).
+% Reads raw data of a scan in ISMRMRD format, coil sensitivity maps, B0
+% nonuniformity, and mask, Then reconstructs an image using expanded 
+% signal model.
 %
 % Inputs:
 % ------
-%
-%    data_adrs: location of ISMRMRD file that contains raw data, trajectory,
-%               noise data and header
-%
-%    map_adrs:  location of a .mat file containing coil sensitivity map, B0
-%               nonuniformity map, and mask for image recon
-% 
-%    nIter: number of itterations for Conjugate Gradient (CG)
-% 
-%    vis:   turn on/off showing information about every iteration of CG
 % 
 % Outputs:
 % -------
-% 
-%    im: reconstructed images [Nx,Ny,Nz,Naquisition,Nreplica]
 % 
 % Article: Feizollah and Tardif (2022)
 % -------
@@ -32,8 +19,8 @@
 % Sajjad Feizollah, July 2022
 % -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
-data_adrs;
-map_adrs;
+data_adrs='';
+map_adrs='';
 
 fprintf('Loading data...')
 [data.kdata,kloc,header,data.noise]=cg_ismrmrd_sort(data_adrs);
