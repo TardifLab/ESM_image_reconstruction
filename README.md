@@ -1,5 +1,5 @@
 # Expanded signal model for image reconstruction
-This MATLAB code reconstructs MR images using the expanded signal model image reconstruction [Wilm et al., 2011](https://doi.org/10.1002/mrm.22767). Field measurements and a static B<sub>0</sub> non-uniformity map are incorporated into the image reconstruction to provide images with minimal distortions and artifacts.
+This MATLAB code reconstructs MR images using the expanded signal model image reconstruction [(Wilm et al., 2011)](https://doi.org/10.1002/mrm.22767). Field measurements and a static B<sub>0</sub> non-uniformity map are incorporated into the image reconstruction to provide images with minimal distortions and artifacts.
 
 ## Requirements
 * A GPU is required to run the code.
