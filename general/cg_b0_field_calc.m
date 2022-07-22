@@ -23,7 +23,7 @@
 % Sajjad Feizollah, July 2022
 % -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
-function B0_map=b0_field_est(pha,echo)
+function B0_map=b0_field_calc(pha,echo)
 
 [Nx,Ny,Nz,~,Nc]=size(pha);
 dEcho=(echo-echo(1))*1e-3;
