@@ -75,8 +75,8 @@ sens=reshape(sens,[N*N,size(sens,4)]);
 sens=sens(recon_data.indx_im,:);
 
 [X,Y,Z]=meshgrid((-.5:1/N:.5-1/N)*fov-pos(1),(-.5:1/N:.5-1/N)*fov+pos(2),-pos(3));
-hh=sph_harmonics(X,-Y,Z);
-conc=conc_func(X,-Y,Z)*0;
+hh=cg_sph_harmonics(X,-Y,Z);
+conc=cg_conc_func(X,-Y,Z)*0;
 h=cat(1,hh(1:size(data.kloc,2)-4,:),conc);
 
 recon_data.h=gpuArray(single(h(:,recon_data.indx_im)));
