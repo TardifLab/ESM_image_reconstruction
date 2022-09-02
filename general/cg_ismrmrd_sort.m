@@ -40,7 +40,7 @@ if(nargin<1)
     data_adrs = fullfile(folder, baseName);
 end
 
-[rawdata,traj,header,noise]=load_ismrmrd(data_adrs);
+[rawdata,traj,header,noise]=cg_ismrmrd_load(data_adrs);
 Nseg=header.hdr.encoding.echoTrainLength;
 Norder=size(traj,1);
 Ncoil=double(size(rawdata,3));
