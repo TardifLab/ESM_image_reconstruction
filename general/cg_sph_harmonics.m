@@ -24,15 +24,6 @@
 % -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
 function H=cg_sph_harmonics(x,y,z)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Generates spherical harmonics basis functions.
-%Input:
-%   x: meshgridded values of x- [Nx*Nx,1]
-%   y: meshgridded values of y- [Ny*Ny,1]
-%   z: meshgridded values of z- [Nz*Nz,1]
-% Output:
-%   h: spherical harmonic basis functions- [16,Nimg^2]
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 h(1,:,:)=ones(length(y),length(x)); % 0th order
 
