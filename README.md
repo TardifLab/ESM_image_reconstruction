@@ -19,6 +19,6 @@ The maximum size of a matrix defined in ***cg_encoding_loops_gpu.m*** needs to b
 * does NOT use gridding for image reconstruction;
 * does NOT use multi-frequency interpolation (MFI) for correction of B<sub>0</sub> non-uniformity.
 
-**Reference:** [Feizollah, S., Tardif, C. L. (2022). *High-resolution diffusion-weighted imaging at 7 Tesla: single-shot readout trajectories and their impact on signal-to-noise ratio, spatial resolution and accuracy.*](http://arxiv.org/abs/2207.07778)
+**Reference:** [Feizollah, S., Tardif, C. L. (2022). *High-resolution diffusion-weighted imaging at 7 Tesla: single-shot readout trajectories and their impact on signal-to-noise ratio, spatial resolution and accuracy.*](https://doi.org/10.1016/j.neuroimage.2023.120159)
 
 **If you have any question regarding the code, please contact: [sajjad.feizollah@mail.mcgill.ca](mailto:sajjad.feizollah@mail.mcgill.ca)**
